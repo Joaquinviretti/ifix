@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>iFix</title>
 </head>
@@ -47,25 +48,25 @@
     </section>
 
     <!-- grid item servicios -->
-    <section id="servicios">
+    <section data-aos="fade-up" id="servicios">
         <h2>¿En qué te podemos ayudar?</h2>
 
         <div class="cardsServicios">
-            <div class="card">
+            <div data-aos="fade-right" class="card">
                 <h3>Reparaciones y garantías</h3>
                 <p>Somos expertos en reparaciones</p>
                 <a class="button" href="./pages/servicios.html">Más información</a>
             </div>
 
             <!-- Bloque -->
-            <div class="card">
+            <div data-aos="fade-down" class="card">
                 <!-- Elemento -->
                 <h3 class="card__titulo">Cambio de batería</h3>
                 <p class="card__descripcion">¿La batería te dura cada vez menos?</p>
                 <a class= "card__button button" href="./pages/servicios.html">Más información</a>
             </div>
 
-            <div class="card">
+            <div data-aos="fade-left" class="card">
                 <h3>Servicio técnico a domicilio</h3>
                 <p>Más alcance que nunca</p>
                 <a class="button" href="./pages/servicios.html">Más información</a>
@@ -75,7 +76,7 @@
     </section>
 
     <!-- grid item aside -->
-    <aside>
+    <aside data-aos="zoom-in">
         <h2>¡Últimas novedades!</h2>
         <div class="novedades">
             <article class="novedad">
@@ -141,6 +142,10 @@
     </footer>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
